@@ -48,12 +48,16 @@
 
 .topLeftHeadings{
     align-self:auto;
+    padding-left: 15px;
+    padding-bottom: 25px;
 }
-
+.topRightHeadings{
+    align-self:auto;
+}
 .topRightContainer{
     display:flex;
     justify-content:flex-end;
-    align-content:space-around;
+    align-content:center;
     height: auto;
     column-count: 4;
     column-width: auto;
@@ -91,8 +95,12 @@ h6{
 
 #signInButton{
     background-color:dodgerblue;
-    height:45%;
+    height:35%;
     margin-top: 25px;
+    border-radius:5px;
+    width:115px;
+    color:whitesmoke;
+    font-size:large;
 }
 
 #mainSearchBar{
@@ -116,6 +124,14 @@ p{
     margin-top:35px;
 }
 
+.grayLink{
+    font-family: sans-serif;
+    font-size:102%;
+    color:dimgray;
+    font-weight:lighter;
+    text-decoration:none;
+}
+
 </style>
 
 </head>
@@ -123,17 +139,22 @@ p{
 <body>
 <div class="topRow">
     <div class="topLeftContainer">
-        <h6 class="topLeftHeadings">About</h6>
-        <h6 class="topLeftHeadings">Store</h6>
+        <h6 class="topLeftHeadings"><a href="" class="grayLink">About</a></h6>
+        <h6 class="topLeftHeadings"><a href="" class="grayLink">Store</a></h6>
     </div>
     <div class="topRightContainer">
-        <h6>Gmail</h6>
-        <h6>Images</h6>
-        <h6>
+        <h6 class="topRightHeadings"><a href="" class="grayLink">Gmail</a></h6>
+        <h6 class="topRightHeadings"><a href="" class="grayLink">Images</a></h6>
+        
+        <h6><a href="">
+     
             <div class="burgerBtnDiv"></div>
             <div class="burgerBtnDiv"></div>
             <div class="burgerBtnDiv"></div>
+       
+            </a>
         </h6>
+        
         <button id="signInButton">Sign In</button>
     </div>
 
