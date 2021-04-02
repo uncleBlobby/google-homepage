@@ -1,0 +1,1 @@
+Following along with the fine guidance of www.theodinproject.com, I'm about to begin to re-create the google homepage!
