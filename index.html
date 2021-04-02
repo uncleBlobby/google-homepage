@@ -11,11 +11,11 @@
 
 .googleImageDisplay{
     display: flex;
-    padding-top:30px;
+
     flex-direction:column;
     align-items:center;
     height:100%;
-    margin-top:auto;
+
     margin-bottom:15px;
 
 }
@@ -34,6 +34,7 @@
     align-content:center;
     padding-top:0px;
     margin-top:-20px;
+
 
 }
 
@@ -89,10 +90,16 @@
 }
 
 h6{
+    padding-top: 5px;
     font-family: sans-serif;
-    font-size:102%;
+    font-size:85%;
     color:dimgray;
     font-weight:lighter;
+    align-self: center;
+}
+
+h6:hover{
+    text-decoration:underline;
 }
 
 #signInButton{
@@ -181,6 +188,29 @@ p{
     text-decoration:none;
 }
 
+.centerCluster{
+    padding-top:150px;
+}
+
+#footerBottom{
+    display:flex;
+    position:fixed;
+    bottom:0px;
+    column-count: 7;
+    background-color: lightgray;
+    height: 55px;
+    width: 100%;
+    margin-top: auto;
+    column-gap: 25px;
+    padding-left: 15px;
+    text-align:center;
+
+}
+
+#brgBtn{
+    padding-top:35px;
+}
+
 </style>
 
 </head>
@@ -195,21 +225,22 @@ p{
         <h6 class="topRightHeadings"><a href="" class="grayLink">Gmail</a></h6>
         <h6 class="topRightHeadings"><a href="" class="grayLink">Images</a></h6>
         
-        <h6><a href="">
+        <a href=""> <img id="brgBtn" alt="menu" src="hamburgerIcon.png" width="21" height="21" ></a>
      
+            <!--<div class="burgerBtnDiv"></div>
             <div class="burgerBtnDiv"></div>
-            <div class="burgerBtnDiv"></div>
-            <div class="burgerBtnDiv"></div>
+            <div class="burgerBtnDiv"></div>-->
        
             </a>
-        </h6>
+       
         
         <button id="signInButton">Sign In</button>
     </div>
 
 </div>
+<div class="centerCluster">
 <div class="googleImageDisplay">
-    <img src="googlelogo_color_272x92dp.png">
+    <img src="googlelogo_color_272x92dp.png" alt="Google">
 </div>
 <div id="searchBarBox">
 <div id="textInput">
@@ -222,6 +253,13 @@ p{
 </div>
 <div id="languageSelect">
     <p>Google offered in: <a href="">Francais</a></p>
+</div>
+</div>
+
+<div id="footerTop"></div>
+<div id="footerBottom">
+    <h6>Advertising</h6>
+    <h6>Business</h6>
 </div>
 
 </body>
