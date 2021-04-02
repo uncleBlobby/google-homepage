@@ -11,11 +11,109 @@
 
 .googleImageDisplay{
     display: flex;
+    padding-top:30px;
     flex-direction:column;
     align-items:center;
     height:100%;
     margin-top:auto;
 
+}
+.burgerBtnDiv{
+    width: 25px;
+    height: 2px;
+    background-color:gray;
+    margin: 4px 0;
+}
+
+.topRow{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content:space-between;
+    align-content:center;
+    padding-top:0px;
+
+}
+
+.topLeftContainer{
+    display:flex;
+    justify-content:flex-start;
+    
+    height: auto;
+    column-count: 2;
+    column-width: auto;
+    column-gap: 10px;
+    
+}
+
+.topLeftHeadings{
+    align-self:auto;
+}
+
+.topRightContainer{
+    display:flex;
+    justify-content:flex-end;
+    align-content:space-around;
+    height: auto;
+    column-count: 4;
+    column-width: auto;
+    column-gap: 15px;
+}
+#searchBarBox{
+    display:flex;
+    column-count:1;
+    width:100%;
+
+    height:auto;
+    justify-content:center;
+}
+#textInput{
+    display:flex;
+    column-count: 1;
+    justify-content:center;
+    width: auto;
+}
+#searchButtonBox{
+    display:flex;
+    column-count: 2;
+    column-gap: 20px;
+    justify-content:center;
+    width: auto;
+    padding-top:10px;
+}
+
+h6{
+    font-family: sans-serif;
+    font-size:102%;
+    color:dimgray;
+    font-weight:lighter;
+}
+
+#signInButton{
+    background-color:dodgerblue;
+    height:45%;
+    margin-top: 25px;
+}
+
+#mainSearchBar{
+    width: 400px;
+}
+
+#mainSearchButtons{
+    display:flex;
+}
+
+p{
+    font-weight:lighter;
+    font-size:12px;
+    font-family:sans-serif;
+}
+
+#languageSelect{
+    display:flex;
+    column-count: 1;
+    justify-content: center;
+    margin-top:35px;
 }
 
 </style>
@@ -23,8 +121,37 @@
 </head>
 
 <body>
+<div class="topRow">
+    <div class="topLeftContainer">
+        <h6 class="topLeftHeadings">About</h6>
+        <h6 class="topLeftHeadings">Store</h6>
+    </div>
+    <div class="topRightContainer">
+        <h6>Gmail</h6>
+        <h6>Images</h6>
+        <h6>
+            <div class="burgerBtnDiv"></div>
+            <div class="burgerBtnDiv"></div>
+            <div class="burgerBtnDiv"></div>
+        </h6>
+        <button id="signInButton">Sign In</button>
+    </div>
+
+</div>
 <div class="googleImageDisplay">
-    
+    <img src="googlelogo_color_272x92dp.png">
+</div>
+<div id="searchBarBox">
+<div id="textInput">
+    <input type="text" id="mainSearchBar">
+</div>
+</div>
+<div id="searchButtonBox">
+    <button type="button" class="mainSearchButtons">Google Search</input>
+    <button type="button" class="mainSearchButtons">I'm Feelin' Lucky</input>
+</div>
+<div id="languageSelect">
+    <p>Google offered in: <a href="">Francais</a></p>
 </div>
 
 </body>
